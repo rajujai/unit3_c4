@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    margin-left: 10vw;
+}
+#sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: aqua;
+    width: 8vw;
+}
+.article img{
+    width: 200px;
+  }
