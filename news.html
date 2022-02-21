@@ -24,10 +24,12 @@
     <script type="module">
       import sidebar from "./components/sidebar.js";
       import {appendArticle} from "./scripts/main.js";
-
+      import search from "./scripts/search.js";
       document.getElementById("sidebar").innerHTML = sidebar();
+      search();
       let article = JSON.parse(localStorage.getItem("article"));
       appendArticle(article, "main");
+      document.querySelector("title").innerText = article.title;
     </script>
   </body>
 </html>

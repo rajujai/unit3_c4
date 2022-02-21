@@ -1,5 +1,5 @@
 body{
-    margin: 0;
+    font-family: sans-serif;
     margin-left: 10vw;
 }
 #sidebar{
@@ -7,9 +7,32 @@ body{
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: aqua;
-    width: 8vw;
+    background-color: #202020;
+    color: #fff;
+    width: 9vw;
+    font-size: 1.5em;
 }
-.article img{
-    width: 200px;
-  }
+#sidebar div{
+    padding: .5em;
+    cursor: pointer;
+}
+#sidebar div:hover{
+    background-color: #000;
+}
+#sidebar input{
+    width: 92%;
+    font-size: 1em;
+    outline: none;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+}
+.article{
+    padding: 0 2%;
+    cursor: pointer;
+}
+.article:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    border-radius: 10px;
+}
